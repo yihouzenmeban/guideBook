@@ -1,0 +1,680 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>作用域提升 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="comparison-operators--equality.html" />
+    
+    
+    <link rel="prev" href="variables.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">前言</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于本规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">语法</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="types.html">
+            
+                <a href="types.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="references.html">
+            
+                <a href="references.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="objects.html">
+            
+                <a href="objects.html">
+            
+                    
+                    对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="arrays.html">
+            
+                <a href="arrays.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="destructuring.html">
+            
+                <a href="destructuring.html">
+            
+                    
+                    解构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="strings.html">
+            
+                <a href="strings.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="arrow-functions.html">
+            
+                <a href="arrow-functions.html">
+            
+                    
+                    箭头函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="classes--constructors.html">
+            
+                <a href="classes--constructors.html">
+            
+                    
+                    类 & 构造函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="iterators-and-generators.html">
+            
+                <a href="iterators-and-generators.html">
+            
+                    
+                    Iterators & Generators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="properties.html">
+            
+                <a href="properties.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.14" data-path="hoisting.html">
+            
+                <a href="hoisting.html">
+            
+                    
+                    作用域提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="comparison-operators--equality.html">
+            
+                <a href="comparison-operators--equality.html">
+            
+                    
+                    比较运算符 & 等号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="blocks.html">
+            
+                <a href="blocks.html">
+            
+                    
+                    代码块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="whitespace.html">
+            
+                <a href="whitespace.html">
+            
+                    
+                    空格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.19" data-path="commas.html">
+            
+                <a href="commas.html">
+            
+                    
+                    逗号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.20" data-path="semicolons.html">
+            
+                <a href="semicolons.html">
+            
+                    
+                    分号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.21" data-path="type-casting--coercion.html">
+            
+                <a href="type-casting--coercion.html">
+            
+                    
+                    类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.22" data-path="naming-conventions.html">
+            
+                <a href="naming-conventions.html">
+            
+                    
+                    命名规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.23" data-path="accessors.html">
+            
+                <a href="accessors.html">
+            
+                    
+                    存取器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.24" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.25" data-path="jquery.html">
+            
+                <a href="jquery.html">
+            
+                    
+                    jQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.26" data-path="ecmascript-5-compatibility.html">
+            
+                <a href="ecmascript-5-compatibility.html">
+            
+                    
+                    ECMAScript 5 兼容性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.27" data-path="setting.html">
+            
+                <a href="setting.html">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >作用域提升</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4F5C;&#x7528;&#x57DF;&#x63D0;&#x5347;">&#x4F5C;&#x7528;&#x57DF;&#x63D0;&#x5347;</h1>
+<ul>
+<li><code>var</code> &#x58F0;&#x660E;&#x4F1A;&#x88AB;&#x63D0;&#x5347;&#x81F3;&#x8BE5;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x9876;&#x90E8;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x8D4B;&#x503C;&#x4E0D;&#x4F1A;&#x63D0;&#x5347;&#x3002;<code>let</code> &#x548C; <code>const</code> &#x88AB;&#x8D4B;&#x4E88;&#x4E86;&#x4E00;&#x79CD;&#x79F0;&#x4E3A;&#x300C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#Temporal_dead_zone_and_errors_with_let" target="_blank">&#x6682;&#x65F6;&#x6027;&#x6B7B;&#x533A;&#xFF08;Temporal Dead Zones, TDZ&#xFF09;</a>&#x300D;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x4E86;&#x89E3;&#x4E3A;&#x4EC0;&#x4E48; <a href="http://es-discourse.com/t/why-typeof-is-no-longer-safe/15" target="_blank">type of &#x4E0D;&#x518D;&#x5B89;&#x5168;</a>&#x76F8;&#x5F53;&#x91CD;&#x8981;&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x6211;&#x4EEC;&#x77E5;&#x9053;&#x8FD9;&#x6837;&#x8FD0;&#x884C;&#x4E0D;&#x4E86;</span>
+<span class="hljs-comment">// &#xFF08;&#x5047;&#x8BBE; notDefined &#x4E0D;&#x662F;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF09;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(notDefined); <span class="hljs-comment">// =&gt; throws a ReferenceError</span>
+}
+
+<span class="hljs-comment">// &#x7531;&#x4E8E;&#x53D8;&#x91CF;&#x63D0;&#x5347;&#x7684;&#x539F;&#x56E0;&#xFF0C;</span>
+<span class="hljs-comment">// &#x5728;&#x5F15;&#x7528;&#x53D8;&#x91CF;&#x540E;&#x518D;&#x58F0;&#x660E;&#x53D8;&#x91CF;&#x662F;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x7684;&#x3002;</span>
+<span class="hljs-comment">// &#x6CE8;&#xFF1A;&#x53D8;&#x91CF;&#x7684;&#x8D4B;&#x503C; `true` &#x4E0D;&#x4F1A;&#x88AB;&#x63D0;&#x5347;&#x3002;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(declaredButNotAssigned); <span class="hljs-comment">// =&gt; undefined</span>
+    <span class="hljs-keyword">var</span> declaredButNotAssigned = <span class="hljs-literal">true</span>;
+}
+
+<span class="hljs-comment">// &#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x628A;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x63D0;&#x5347;&#x5230;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x9876;&#x5C42;&#xFF0C;</span>
+<span class="hljs-comment">// &#x8FD9;&#x610F;&#x5473;&#x7740;&#x6211;&#x4EEC;&#x7684;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x6539;&#x5199;&#x6210;&#x8FD9;&#x6837;&#xFF1A;</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">let</span> declaredButNotAssigned;
+    <span class="hljs-built_in">console</span>.log(declaredButNotAssigned); <span class="hljs-comment">// =&gt; undefined</span>
+    declaredButNotAssigned = <span class="hljs-literal">true</span>;
+}
+
+<span class="hljs-comment">// &#x4F7F;&#x7528; const &#x548C; let</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(declaredButNotAssigned); <span class="hljs-comment">// =&gt; throws a ReferenceError</span>
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">typeof</span> declaredButNotAssigned); <span class="hljs-comment">// =&gt; throws a ReferenceError</span>
+    <span class="hljs-keyword">const</span> declaredButNotAssigned = <span class="hljs-literal">true</span>;
+}
+</code></pre>
+<ul>
+<li>&#x533F;&#x540D;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x4F1A;&#x88AB;&#x63D0;&#x5347;&#xFF0C;&#x4F46;&#x51FD;&#x6570;&#x5185;&#x5BB9;&#x5E76;&#x4E0D;&#x4F1A;&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(anonymous); <span class="hljs-comment">// =&gt; undefined</span>
+
+    anonymous(); <span class="hljs-comment">// =&gt; TypeError anonymous is not a function</span>
+
+    <span class="hljs-keyword">var</span> anonymous = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;anonymous function expression&apos;</span>);
+    };
+}
+</code></pre>
+<ul>
+<li>&#x547D;&#x540D;&#x7684;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x53D8;&#x91CF;&#x540D;&#x4F1A;&#x88AB;&#x63D0;&#x5347;&#xFF0C;&#x4F46;&#x51FD;&#x6570;&#x540D;&#x548C;&#x51FD;&#x6570;&#x51FD;&#x6570;&#x5185;&#x5BB9;&#x5E76;&#x4E0D;&#x4F1A;&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(named); <span class="hljs-comment">// =&gt; undefined</span>
+
+    named(); <span class="hljs-comment">// =&gt; TypeError named is not a function</span>
+
+    superPower(); <span class="hljs-comment">// =&gt; ReferenceError superPower is not defined</span>
+
+    <span class="hljs-keyword">var</span> named = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">superPower</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Flying&apos;</span>);
+    };
+}
+
+<span class="hljs-comment">// the same is true when the function name</span>
+<span class="hljs-comment">// is the same as the variable name.</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(named); <span class="hljs-comment">// =&gt; undefined</span>
+
+    named(); <span class="hljs-comment">// =&gt; TypeError named is not a function</span>
+
+    <span class="hljs-keyword">var</span> named = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">named</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;named&apos;</span>);
+    }
+}
+</code></pre>
+<ul>
+<li>&#x58F0;&#x660E;&#x51FD;&#x6570;&#x7684;&#x540D;&#x79F0;&#x548C;&#x51FD;&#x6570;&#x4F53;&#x90FD;&#x4F1A;&#x88AB;&#x63D0;&#x5347;&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">example</span>(<span class="hljs-params"></span>) </span>{
+    superPower(); <span class="hljs-comment">// =&gt; Flying</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">superPower</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Flying&apos;</span>);
+    }
+}
+</code></pre>
+<ul>
+<li>&#x60F3;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x53C2;&#x8003; <a href="http://www.adequatelygood.com/" target="_blank">Ben Cherry</a> &#x7684; <a href="http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting" target="_blank">JavaScript Scoping &amp; Hoisting</a>&#x3002;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="variables.html" class="navigation navigation-prev " aria-label="Previous page: 变量">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="comparison-operators--equality.html" class="navigation navigation-next " aria-label="Next page: 比较运算符 & 等号">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"作用域提升","level":"2.14","depth":1,"next":{"title":"比较运算符 & 等号","level":"2.15","depth":1,"path":"content/comparison-operators--equality.md","ref":"content/comparison-operators--equality.md","articles":[]},"previous":{"title":"变量","level":"2.13","depth":1,"path":"content/variables.md","ref":"content/variables.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/hoisting.md","mtime":"2019-07-16T15:38:56.960Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-16T16:08:48.934Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

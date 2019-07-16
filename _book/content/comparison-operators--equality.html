@@ -1,0 +1,729 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>比较运算符 & 等号 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="blocks.html" />
+    
+    
+    <link rel="prev" href="hoisting.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">前言</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于本规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">语法</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="types.html">
+            
+                <a href="types.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="references.html">
+            
+                <a href="references.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="objects.html">
+            
+                <a href="objects.html">
+            
+                    
+                    对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="arrays.html">
+            
+                <a href="arrays.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="destructuring.html">
+            
+                <a href="destructuring.html">
+            
+                    
+                    解构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="strings.html">
+            
+                <a href="strings.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="arrow-functions.html">
+            
+                <a href="arrow-functions.html">
+            
+                    
+                    箭头函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="classes--constructors.html">
+            
+                <a href="classes--constructors.html">
+            
+                    
+                    类 & 构造函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="iterators-and-generators.html">
+            
+                <a href="iterators-and-generators.html">
+            
+                    
+                    Iterators & Generators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="properties.html">
+            
+                <a href="properties.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="hoisting.html">
+            
+                <a href="hoisting.html">
+            
+                    
+                    作用域提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.15" data-path="comparison-operators--equality.html">
+            
+                <a href="comparison-operators--equality.html">
+            
+                    
+                    比较运算符 & 等号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="blocks.html">
+            
+                <a href="blocks.html">
+            
+                    
+                    代码块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="whitespace.html">
+            
+                <a href="whitespace.html">
+            
+                    
+                    空格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.19" data-path="commas.html">
+            
+                <a href="commas.html">
+            
+                    
+                    逗号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.20" data-path="semicolons.html">
+            
+                <a href="semicolons.html">
+            
+                    
+                    分号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.21" data-path="type-casting--coercion.html">
+            
+                <a href="type-casting--coercion.html">
+            
+                    
+                    类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.22" data-path="naming-conventions.html">
+            
+                <a href="naming-conventions.html">
+            
+                    
+                    命名规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.23" data-path="accessors.html">
+            
+                <a href="accessors.html">
+            
+                    
+                    存取器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.24" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.25" data-path="jquery.html">
+            
+                <a href="jquery.html">
+            
+                    
+                    jQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.26" data-path="ecmascript-5-compatibility.html">
+            
+                <a href="ecmascript-5-compatibility.html">
+            
+                    
+                    ECMAScript 5 兼容性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.27" data-path="setting.html">
+            
+                <a href="setting.html">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >比较运算符 & 等号</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x7B26;--&#x7B49;&#x53F7;">&#x6BD4;&#x8F83;&#x8FD0;&#x7B97;&#x7B26; &amp; &#x7B49;&#x53F7;</h1>
+<ul>
+<li><p><del>&#x4F18;&#x5148;&#x4F7F;&#x7528; <code>===</code> &#x548C; <code>!==</code> &#x800C;&#x4E0D;&#x662F; <code>==</code> &#x548C; <code>!=</code>&#x3002;eslint: <a href="http://eslint.cn/docs/rules/eqeqeq" target="_blank"><code>eqeqeq</code></a></del> <code>&#x5DF2;&#x5220;&#x9664;</code></p>
+</li>
+<li><p>&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#x4F8B;&#x5982; <code>if</code> &#x8BED;&#x53E5;&#x901A;&#x8FC7;&#x62BD;&#x8C61;&#x65B9;&#x6CD5; <code>ToBoolean</code> &#x5F3A;&#x5236;&#x8BA1;&#x7B97;&#x5B83;&#x4EEC;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x5E76;&#x4E14;&#x603B;&#x662F;&#x9075;&#x5B88;&#x4E0B;&#x9762;&#x7684;&#x89C4;&#x5219;&#xFF1A;</p>
+<ul>
+<li><strong>&#x5BF9;&#x8C61;</strong> &#x88AB;&#x8BA1;&#x7B97;&#x4E3A; <strong>true</strong></li>
+<li><strong>undefined</strong> &#x88AB;&#x8BA1;&#x7B97;&#x4E3A; <strong>false</strong></li>
+<li><strong>null</strong> &#x88AB;&#x8BA1;&#x7B97;&#x4E3A; <strong>false</strong></li>
+<li><strong>&#x5E03;&#x5C14;&#x503C;</strong> &#x88AB;&#x8BA1;&#x7B97;&#x4E3A; <strong>&#x5E03;&#x5C14;&#x7684;&#x503C;</strong></li>
+<li><strong>&#x6570;&#x5B57;</strong> &#x5982;&#x679C;&#x662F; <strong>+0&#x3001;-0&#x3001;&#x6216; NaN</strong> &#x88AB;&#x8BA1;&#x7B97;&#x4E3A; <strong>false</strong>, &#x5426;&#x5219;&#x4E3A; <strong>true</strong></li>
+<li><strong>&#x5B57;&#x7B26;&#x4E32;</strong> &#x5982;&#x679C;&#x662F;&#x7A7A;&#x5B57;&#x7B26;&#x4E32; <code>&apos;&apos;</code> &#x88AB;&#x8BA1;&#x7B97;&#x4E3A; <strong>false</strong>&#xFF0C;&#x5426;&#x5219;&#x4E3A; <strong>true</strong></li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> ([<span class="hljs-number">0</span>] &amp;&amp; []) {
+    <span class="hljs-comment">// true</span>
+    <span class="hljs-comment">// An array is an object, objects evaluate to true</span>
+}
+</code></pre>
+<ul>
+<li>&#x4F7F;&#x7528;&#x7B80;&#x5199;&#xFF0C;&#x663E;&#x793A;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x548C;&#x6570;&#x5B57;&#x5BF9;&#x6BD4;&#x9664;&#x5916;&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">if</span> (isValid === <span class="hljs-literal">true</span>) {
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">if</span> (isValid) {
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">if</span> (name) {
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">if</span> (name !== <span class="hljs-string">&apos;&apos;</span>) {
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">if</span> (collection.length) {
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">if</span> (collection.length &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<ul>
+<li><p>&#x60F3;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#xFF0C;&#x53C2;&#x8003; Angus Croll &#x7684; <a href="http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108" target="_blank">Truth Equality and JavaScript</a>&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x82B1;&#x62EC;&#x53F7;&#x521B;&#x5EFA;&#x5757;&#x4F5C;&#x7528;&#x57DF;&#x6765;&#x5305;&#x88F9; <code>case</code> &#x548C; <code>default</code>&#xFF0C;&#x5982;&#x679C;&#x5B50;&#x53E5;&#x5305;&#x542B;&#x8BCD;&#x6CD5;&#x58F0;&#x660E;(&#x4F8B;&#x5982;&#xFF1A;<code>let</code>, <code>const</code>, <code>function</code>, <code>class</code>)&#x3002;eslint: <a href="http://eslint.cn/docs/rules/no-case-declarations" target="_blank"><code>no-case-declarations</code></a>.</p>
+</li>
+</ul>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;? &#x56E0;&#x4E3A;&#x8BCD;&#x6CD5;&#x58F0;&#x660E;&#x5728;&#x6574;&#x4E2A; switch &#x4F5C;&#x7528;&#x57DF;&#x90FD;&#x6709;&#x6548;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x53EA;&#x6709;&#x5728;&#x8FD0;&#x884C;&#x5230;&#x5B83;&#x5B9A;&#x4E49;&#x7684; <code>case</code> &#x8BED;&#x53E5;&#x65F6;&#xFF0C;&#x624D;&#x4F1A;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x56DE;&#x5BFC;&#x81F4;&#x5F88;&#x591A; <code>case</code> &#x7684;&#x5B50;&#x53E5;&#x5B9A;&#x4E49;&#x540C;&#x4E00;&#x4E2A;&#x4E1C;&#x897F;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">switch</span> (foo) {
+    <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+        <span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>:
+        <span class="hljs-keyword">const</span> y = <span class="hljs-number">2</span>;
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>:
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// ...</span>
+        }
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">default</span>:
+        <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">C</span> </span>{}
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">switch</span> (foo) {
+    <span class="hljs-keyword">case</span> <span class="hljs-number">1</span>: {
+        <span class="hljs-keyword">let</span> x = <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">break</span>;
+    }
+    <span class="hljs-keyword">case</span> <span class="hljs-number">2</span>: {
+        <span class="hljs-keyword">const</span> y = <span class="hljs-number">2</span>;
+        <span class="hljs-keyword">break</span>;
+    }
+    <span class="hljs-keyword">case</span> <span class="hljs-number">3</span>: {
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// ...</span>
+        }
+        <span class="hljs-keyword">break</span>;
+    }
+    <span class="hljs-keyword">case</span> <span class="hljs-number">4</span>:
+        bar();
+        <span class="hljs-keyword">break</span>;
+    <span class="hljs-keyword">default</span>: {
+        <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">C</span> </span>{}
+    }
+}
+</code></pre>
+<ul>
+<li>&#x7981;&#x6B62;&#x4F7F;&#x7528;&#x5D4C;&#x5957;&#x7684;&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x3002;eslint rules: <a href="http://eslint.cn/docs/rules/no-nested-ternary" target="_blank"><code>no-nested-ternary</code></a></li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">const</span> foo = maybe1 &gt; maybe2
+    ? <span class="hljs-string">&quot;bar&quot;</span>
+    : value1 &gt; value2 ? <span class="hljs-string">&quot;baz&quot;</span> : <span class="hljs-literal">null</span>;
+
+<span class="hljs-comment">// better</span>
+<span class="hljs-keyword">const</span> maybeNull = value1 &gt; value2 ? <span class="hljs-string">&apos;baz&apos;</span> : <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">const</span> foo = maybe1 &gt; maybe2
+    ? <span class="hljs-string">&apos;bar&apos;</span>
+    : maybeNull;
+
+<span class="hljs-comment">// best</span>
+<span class="hljs-keyword">const</span> maybeNull = value1 &gt; value2 ? <span class="hljs-string">&apos;baz&apos;</span> : <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">const</span> foo = maybe1 &gt; maybe2 ? <span class="hljs-string">&apos;bar&apos;</span> : maybeNull;
+</code></pre>
+<ul>
+<li>&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x65E0;&#x610F;&#x4E49;&#x7684;&#x4E09;&#x5143;&#x8FD0;&#x7B97;&#x7B26;&#x3002;eslint rules: <a href="http://eslint.cn/docs/rules/no-unneeded-ternary" target="_blank"><code>no-unneeded-ternary</code></a></li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">const</span> foo = a ? a : b;
+<span class="hljs-keyword">const</span> bar = c ? <span class="hljs-literal">true</span> : <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">const</span> baz = c ? <span class="hljs-literal">false</span> : <span class="hljs-literal">true</span>;
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">const</span> foo = a || b;
+<span class="hljs-keyword">const</span> bar = !!c;
+<span class="hljs-keyword">const</span> baz = !c;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="hoisting.html" class="navigation navigation-prev " aria-label="Previous page: 作用域提升">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="blocks.html" class="navigation navigation-next " aria-label="Next page: 代码块">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"比较运算符 & 等号","level":"2.15","depth":1,"next":{"title":"代码块","level":"2.16","depth":1,"path":"content/blocks.md","ref":"content/blocks.md","articles":[]},"previous":{"title":"作用域提升","level":"2.14","depth":1,"path":"content/hoisting.md","ref":"content/hoisting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/comparison-operators--equality.md","mtime":"2019-07-16T15:44:34.563Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-16T16:08:48.934Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

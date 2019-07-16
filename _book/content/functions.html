@@ -1,0 +1,848 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="arrow-functions.html" />
+    
+    
+    <link rel="prev" href="strings.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">前言</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于本规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">语法</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="types.html">
+            
+                <a href="types.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="references.html">
+            
+                <a href="references.html">
+            
+                    
+                    引用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="objects.html">
+            
+                <a href="objects.html">
+            
+                    
+                    对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="arrays.html">
+            
+                <a href="arrays.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="destructuring.html">
+            
+                <a href="destructuring.html">
+            
+                    
+                    解构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="strings.html">
+            
+                <a href="strings.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.7" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="arrow-functions.html">
+            
+                <a href="arrow-functions.html">
+            
+                    
+                    箭头函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="classes--constructors.html">
+            
+                <a href="classes--constructors.html">
+            
+                    
+                    类 & 构造函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="iterators-and-generators.html">
+            
+                <a href="iterators-and-generators.html">
+            
+                    
+                    Iterators & Generators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="properties.html">
+            
+                <a href="properties.html">
+            
+                    
+                    属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="hoisting.html">
+            
+                <a href="hoisting.html">
+            
+                    
+                    作用域提升
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="comparison-operators--equality.html">
+            
+                <a href="comparison-operators--equality.html">
+            
+                    
+                    比较运算符 & 等号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="blocks.html">
+            
+                <a href="blocks.html">
+            
+                    
+                    代码块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.17" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.18" data-path="whitespace.html">
+            
+                <a href="whitespace.html">
+            
+                    
+                    空格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.19" data-path="commas.html">
+            
+                <a href="commas.html">
+            
+                    
+                    逗号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.20" data-path="semicolons.html">
+            
+                <a href="semicolons.html">
+            
+                    
+                    分号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.21" data-path="type-casting--coercion.html">
+            
+                <a href="type-casting--coercion.html">
+            
+                    
+                    类型转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.22" data-path="naming-conventions.html">
+            
+                <a href="naming-conventions.html">
+            
+                    
+                    命名规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.23" data-path="accessors.html">
+            
+                <a href="accessors.html">
+            
+                    
+                    存取器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.24" data-path="events.html">
+            
+                <a href="events.html">
+            
+                    
+                    事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.25" data-path="jquery.html">
+            
+                <a href="jquery.html">
+            
+                    
+                    jQuery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.26" data-path="ecmascript-5-compatibility.html">
+            
+                <a href="ecmascript-5-compatibility.html">
+            
+                    
+                    ECMAScript 5 兼容性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.27" data-path="setting.html">
+            
+                <a href="setting.html">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x51FD;&#x6570;">&#x51FD;&#x6570;</h1>
+<ul>
+<li><del>&#x4F7F;&#x7528;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x4EE3;&#x66FF;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x3002;</del> <code>&#x5DF2;&#x5220;&#x9664;</code></li>
+</ul>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4F1A;&#x628A;&#x6574;&#x4E2A;&#x51FD;&#x6570;&#x63D0;&#x5347;&#xFF08;hoisted&#xFF09;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6211;&#x4EEC;&#x5F88;&#x5BB9;&#x6613;&#x5728;&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x7684;&#x4F4D;&#x7F6E;&#x4E4B;&#x524D;&#x53BB;&#x5F15;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x4EE3;&#x7801;&#x7684;&#x53EF;&#x7EF4;&#x62A4;&#x6027;&#x548C;&#x53EF;&#x8BFB;&#x6027;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">const</span> foo = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+};
+</code></pre>
+<ul>
+<li>&#x628A;&#x9700;&#x8981;&#x7ACB;&#x5373;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;&#x5305;&#x88F9;&#x8D77;&#x6765;&#xFF08;&#x5305;&#x88F9; function &#x8868;&#x8FBE;&#x5F0F;&#xFF09;&#x3002;eslint: <a href="http://eslint.cn/docs/rules/wrap-iife" target="_blank"><code>wrap-iife</code></a></li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x7ACB;&#x5373;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F; (IIFE)</span>
+(() =&gt; {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Welcome to the Internet. Please follow me.&apos;</span>);
+})();
+</code></pre>
+<ul>
+<li><p>&#x6C38;&#x8FDC;&#x4E0D;&#x8981;&#x5728;&#x4E00;&#x4E2A;&#x975E;&#x51FD;&#x6570;&#x4EE3;&#x7801;&#x5757;&#xFF08;<code>if</code>&#x3001;<code>while</code> &#x7B49;&#xFF09;&#x4E2D;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;&#x628A;&#x90A3;&#x4E2A;&#x51FD;&#x6570;&#x8D4B;&#x7ED9;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x518D;&#x4F7F;&#x7528;&#x3002;&#x867D;&#x7136;&#x6D4F;&#x89C8;&#x5668;&#x5141;&#x8BB8;&#x4F60;&#x8FD9;&#x4E48;&#x505A;&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x7684;&#x89E3;&#x6790;&#x8868;&#x73B0;&#x4E0D;&#x4E00;&#x81F4;&#x3002;eslint: <a href="http://eslint.cn/docs/rules/no-loop-func" target="_blank"><code>no-loop-func</code></a></p>
+</li>
+<li><p><strong>&#x6CE8;&#x610F;:</strong> ECMA-262 &#x628A; <code>block</code> &#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x7EC4;&#x8BED;&#x53E5;&#x3002;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E0D;&#x662F;&#x8BED;&#x53E5;&#x3002;<a href="http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97" target="_blank">&#x9605;&#x8BFB; ECMA-262 &#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x8BF4;&#x660E;</a>&#x3002;</p>
+</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">if</span> (currentUser) {
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">test</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Nope.&apos;</span>);
+    }
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">let</span> test;
+<span class="hljs-keyword">if</span> (currentUser) {
+    test = () =&gt; {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Yup.&apos;</span>);
+    };
+}
+</code></pre>
+<ul>
+<li>&#x6C38;&#x8FDC;&#x4E0D;&#x8981;&#x628A;&#x53C2;&#x6570;&#x547D;&#x540D;&#x4E3A; <code>arguments</code>&#x3002;&#x8FD9;&#x5C06;&#x8986;&#x76D6;&#x539F;&#x6765;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x7684; <code>arguments</code> &#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nope</span>(<span class="hljs-params">name, options, arguments</span>) </span>{
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">yup</span>(<span class="hljs-params">name, options, args</span>) </span>{
+    <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<ul>
+<li>&#x4E0D;&#x8981;&#x4F7F;&#x7528; <code>arguments</code>&#x3002;&#x53EF;&#x4EE5;&#x9009;&#x62E9; rest &#x8BED;&#x6CD5; <code>...</code> &#x66FF;&#x4EE3;&#x3002;</li>
+</ul>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x4F7F;&#x7528; <code>...</code> &#x80FD;&#x660E;&#x786E;&#x4F60;&#x8981;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x3002;&#x53E6;&#x5916; rest &#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x771F;&#x6B63;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x800C; <code>arguments</code> &#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x6570;&#x7EC4;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">concatenateAll</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">const</span> args = <span class="hljs-built_in">Array</span>.prototype.slice.call(<span class="hljs-built_in">arguments</span>);
+    <span class="hljs-keyword">return</span> args.join(<span class="hljs-string">&apos;&apos;</span>);
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">concatenateAll</span>(<span class="hljs-params">...args</span>) </span>{
+    <span class="hljs-keyword">return</span> args.join(<span class="hljs-string">&apos;&apos;</span>);
+}
+</code></pre>
+<ul>
+<li>&#x76F4;&#x63A5;&#x7ED9;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x6307;&#x5B9A;&#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x4E0D;&#x8981;&#x6539;&#x53D8;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// really bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleThings</span>(<span class="hljs-params">opts</span>) </span>{
+    <span class="hljs-comment">// &#x4E0D;&#xFF01;&#x6211;&#x4EEC;&#x4E0D;&#x5E94;&#x8BE5;&#x6539;&#x53D8;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x3002;</span>
+    <span class="hljs-comment">// &#x66F4;&#x52A0;&#x7CDF;&#x7CD5;: &#x5982;&#x679C;&#x53C2;&#x6570; opts &#x662F; false &#x7684;&#x8BDD;&#xFF0C;&#x5B83;&#x5C31;&#x4F1A;&#x88AB;&#x8BBE;&#x5B9A;&#x4E3A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;</span>
+    <span class="hljs-comment">// &#x4F46;&#x8FD9;&#x6837;&#x7684;&#x5199;&#x6CD5;&#x4F1A;&#x9020;&#x6210;&#x4E00;&#x4E9B; Bugs&#x3002;</span>
+    <span class="hljs-comment">//&#xFF08;&#x8BD1;&#x6CE8;&#xFF1A;&#x4F8B;&#x5982;&#x5F53; opts &#x88AB;&#x8D4B;&#x503C;&#x4E3A;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;opts &#x4ECD;&#x7136;&#x4F1A;&#x88AB;&#x4E0B;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x8BBE;&#x5B9A;&#x4E3A;&#x4E00;&#x4E2A;&#x7A7A;&#x5BF9;&#x8C61;&#x3002;&#xFF09;</span>
+    opts = opts || {};
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// still bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleThings</span>(<span class="hljs-params">opts</span>) </span>{
+    <span class="hljs-keyword">if</span> (opts === <span class="hljs-keyword">void</span> <span class="hljs-number">0</span>) {
+        opts = {};
+    }
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleThings</span>(<span class="hljs-params">opts = {}</span>) </span>{
+    <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<ul>
+<li>&#x76F4;&#x63A5;&#x7ED9;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x8D4B;&#x503C;&#x65F6;&#x9700;&#x8981;&#x907F;&#x514D;&#x526F;&#x4F5C;&#x7528;&#x3002;</li>
+</ul>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x7684;&#x5199;&#x6CD5;&#x8BA9;&#x4EBA;&#x611F;&#x5230;&#x5F88;&#x56F0;&#x60D1;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> b = <span class="hljs-number">1</span>;
+<span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">count</span>(<span class="hljs-params">a = b++</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(a);
+}
+count();  <span class="hljs-comment">// 1</span>
+count();  <span class="hljs-comment">// 2</span>
+count(<span class="hljs-number">3</span>); <span class="hljs-comment">// 3</span>
+count();  <span class="hljs-comment">// 3</span>
+</code></pre>
+<ul>
+<li>&#x628A;&#x6709;&#x9ED8;&#x8BA4;&#x503C;&#x7684;&#x53C2;&#x6570;&#x653E;&#x5728;&#x6700;&#x540E;&#x9762;&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleThings</span>(<span class="hljs-params">opts = {}, name</span>) </span>{
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleThings</span>(<span class="hljs-params">name, opts = {}</span>) </span>{
+    <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<ul>
+<li>&#x6C38;&#x8FDC;&#x4E0D;&#x8981;&#x4F7F;&#x7528; <code>Function</code> &#x53BB;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x51FD;&#x6570;&#x3002;eslint: <a href="http://eslint.cn/docs/rules/no-new-func" target="_blank"><code>no-new-func</code></a></li>
+</ul>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x53BB;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x51FD;&#x6570;&#x76F8;&#x5F53;&#x4E8E;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x4F7F;&#x7528; <code>eval()</code>&#xFF0C;&#x4F1A;&#x5F15;&#x8D77;&#x5F88;&#x591A;&#x95EE;&#x9898;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">var</span> add = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Function</span>(<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;return a + b&apos;</span>);
+
+<span class="hljs-comment">// still bad</span>
+<span class="hljs-keyword">var</span> subtract = <span class="hljs-built_in">Function</span>(<span class="hljs-string">&apos;a&apos;</span>, <span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;return a - b&apos;</span>);
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">var</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">a, b</span>) </span>{
+    <span class="hljs-keyword">return</span> a + b;
+};
+</code></pre>
+<ul>
+<li>&#x5728;&#x51FD;&#x6570;&#x7684;&#x5706;&#x62EC;&#x53F7;&#x524D;&#x540E;&#x6DFB;&#x52A0;&#x7A7A;&#x683C;&#x3002; eslint: <a href="http://eslint.cn/docs/rules/space-before-function-paren" target="_blank"><code>space-before-function-paren</code></a> <a href="http://eslint.cn/docs/rules/space-before-blocks" target="_blank"><code>space-before-blocks</code></a></li>
+</ul>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;? &#x4E00;&#x81F4;&#x6027;&#x5F88;&#x91CD;&#x8981;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x6DFB;&#x52A0;&#x6216;&#x8005;&#x5220;&#x9664;&#x51FD;&#x6570;&#x540D;&#x5B57;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x9700;&#x8981;&#x6DFB;&#x52A0;&#x6216;&#x8005;&#x5220;&#x9664;&#x7A7A;&#x683C;&#x4E86;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">const</span> f = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">const</span> g = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>)</span>{};
+<span class="hljs-keyword">const</span> h = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">const</span> x = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{};
+<span class="hljs-keyword">const</span> y = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">a</span>(<span class="hljs-params"></span>) </span>{};
+</code></pre>
+<ul>
+<li><del>&#x6C38;&#x8FDC;&#x4E0D;&#x8981;&#x64CD;&#x4F5C;&#x53C2;&#x6570;&#x3002;eslint: <a href="http://eslint.cn/docs/rules/no-param-reassign" target="_blank"><code>no-param-reassign</code></a></del> <code>&#x5DF2;&#x5220;&#x9664;</code></li>
+</ul>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x5BF9;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x53EF;&#x80FD;&#x4F1A;&#x8BEF;&#x5BFC;&#x8BFB;&#x8005;&#xFF0C;&#x5BFC;&#x81F4;&#x6DF7;&#x4E71;&#xFF0C;&#x4E5F;&#x4F1A;&#x6539;&#x53D8; <code>arguments</code> &#x5BF9;&#x8C61;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f1</span>(<span class="hljs-params">obj</span>) </span>{
+    obj.key = <span class="hljs-number">1</span>;
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f2</span>(<span class="hljs-params">obj</span>) </span>{
+    <span class="hljs-keyword">const</span> key = <span class="hljs-built_in">Object</span>.prototype.hasOwnProperty.call(obj, <span class="hljs-string">&apos;key&apos;</span>) ? obj.key : <span class="hljs-number">1</span>;
+}
+</code></pre>
+<ul>
+<li>&#x6C38;&#x8FDC;&#x4E0D;&#x8981;&#x5BF9;&#x53C2;&#x6570;&#x91CD;&#x65B0;&#x8D4B;&#x503C;&#x3002;eslint: <a href="http://eslint.cn/docs/rules/no-param-reassign" target="_blank"><code>no-param-reassign</code></a></li>
+</ul>
+<blockquote>
+<p>&#x4E3A;&#x4EC0;&#x4E48;? &#x91CD;&#x65B0;&#x8D4B;&#x503C;&#x53C2;&#x6570;&#x4F1A;&#x5BFC;&#x81F4;&#x4E00;&#x4E9B;&#x4E0D;&#x53EF;&#x9884;&#x6599;&#x7684;&#x60C5;&#x51B5;&#x53D1;&#x751F;&#xFF0C;&#x6BD4;&#x5982;&#x5F53;&#x8BBF;&#x95EE; <code>arguments</code> &#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;&#x3002;&#x8FD9;&#x4E5F;&#x4F1A;&#x5F71;&#x54CD;&#x4E00;&#x4E9B;&#x6027;&#x80FD;&#x4F18;&#x5316;&#x95EE;&#x95EE;&#x9898;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5728; <a href="https://github.com/v8/v8" target="_blank"><code>v8</code></a> &#x5F15;&#x64CE;&#x4E2D;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f1</span>(<span class="hljs-params">a</span>) </span>{
+    a = <span class="hljs-number">1</span>;
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f2</span>(<span class="hljs-params">a</span>) </span>{
+    <span class="hljs-keyword">if</span> (!a) { a = <span class="hljs-number">1</span>; }
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f3</span>(<span class="hljs-params">a</span>) </span>{
+    <span class="hljs-keyword">const</span> b = a || <span class="hljs-number">1</span>;
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">f4</span>(<span class="hljs-params">a = 1</span>) </span>{
+    <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<ul>
+<li>&#x6700;&#x597D;&#x4F7F;&#x7528;&#x6269;&#x5C55;&#x8FD0;&#x7B97;&#x7B26; <code>...</code> &#x8C03;&#x7528;&#x53EF;&#x53D8;&#x53C2;&#x6570;&#x51FD;&#x6570;&#x3002;eslint: <a href="http://eslint.cn/docs/rules/prefer-spread" target="_blank"><code>prefer-spread</code></a></li>
+</ul>
+<blockquote>
+<p>Why? It&apos;s cleaner, you don&apos;t need to supply a context, and you can not easily compose <code>new</code> with <code>apply</code>.</p>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">const</span> x = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+<span class="hljs-built_in">console</span>.log.apply(<span class="hljs-built_in">console</span>, x);
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">const</span> x = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+<span class="hljs-built_in">console</span>.log(...x);
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-keyword">new</span> (<span class="hljs-built_in">Function</span>.prototype.bind.apply(<span class="hljs-built_in">Date</span>, [<span class="hljs-literal">null</span>, <span class="hljs-number">2016</span>, <span class="hljs-number">8</span>, <span class="hljs-number">5</span>]));
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(...[<span class="hljs-number">2016</span>, <span class="hljs-number">8</span>, <span class="hljs-number">5</span>]);
+</code></pre>
+<ul>
+<li>&#x6709;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#x5728;&#x8C03;&#x7528;&#x6216;&#x8005;&#x5B9A;&#x4E49;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528;&#x6362;&#x884C;&#x7F29;&#x8FDB;&#xFF0C;&#x5E94;&#x8BE5;&#x548C;&#x5176;&#x5B83;&#x591A;&#x884C;&#x5217;&#x8868;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#xFF1A;&#x6BCF;&#x4E00;&#x6761;&#x8BED;&#x53E5;&#x5360;&#x7528;&#x4E00;&#x884C;&#xFF0C;&#x5728;&#x6700;&#x540E;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x9017;&#x53F7;&#x3002;</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">bar,
+                baz,
+                quux</span>) </span>{
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">
+    bar,
+    baz,
+    quux,
+</span>) </span>{
+    <span class="hljs-comment">// ...</span>
+}
+
+<span class="hljs-comment">// bad</span>
+<span class="hljs-built_in">console</span>.log(foo,
+    bar,
+    baz);
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-built_in">console</span>.log(
+    foo,
+    bar,
+    baz,
+);
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="strings.html" class="navigation navigation-prev " aria-label="Previous page: 字符串">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="arrow-functions.html" class="navigation navigation-next " aria-label="Next page: 箭头函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"函数","level":"2.7","depth":1,"next":{"title":"箭头函数","level":"2.8","depth":1,"path":"content/arrow-functions.md","ref":"content/arrow-functions.md","articles":[]},"previous":{"title":"字符串","level":"2.6","depth":1,"path":"content/strings.md","ref":"content/strings.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"content/functions.md","mtime":"2019-07-16T15:23:31.162Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-16T16:08:48.934Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
